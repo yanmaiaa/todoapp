@@ -1,0 +1,56 @@
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.badge {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge button {
+  margin: auto;
+  width: 40%;
+  border: solid 0.02px;
+}
+
+.task:hover {
+  background-color: rgb(241, 227, 227);
+}
+
+.novo-todo:hover {
+  background-color: rgb(241, 227, 227);
+}
+
+.content {
+  width: 100%;
+}
+
+mat-card {
+  width: 85%;
+  margin: auto;
+}
+
+.card {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: end;
+  font-weight: 600;
+  color: blueviolet;
+  margin-bottom: 0;
+}
+
+.actions {
+  text-align: end;
+}
+
+.actions button {
+  margin: 0.5rem;
+}

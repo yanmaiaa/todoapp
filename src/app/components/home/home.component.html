@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="badge">
+    <button
+      mat-stroked-button
+      color="primary"
+      class="novo-todo mat-elevation-z1"
+    >
+      NEW TO-DO
+    </button>
+    <button
+      mat-stroked-button
+      color="primary"
+      matBadge="{{ closed }}"
+      matBadgeColor="accent"
+      class="task mat-elevation-z1"
+    >
+      COMPLETED TASKS
+    </button>
+  </div>
+  <div class="card content">
+    <mat-card class="mat-elevation-z2">
+      <p>Data para finalizar:</p>
+      <mat-card-header>
+        <mat-card-title>Titulo</mat-card-title>
+        <mat-card-subtitle>Descricao</mat-card-subtitle>
+      </mat-card-header>
+      <div class="actions">
+        <button class="mat-elevation-z4" mat-mini-fab color="primary">
+          <mat-icon>done</mat-icon>
+        </button>
+        <button class="mat-elevation-z4" mat-mini-fab color="accent">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button class="mat-elevation-z4" mat-mini-fab color="warn">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>
