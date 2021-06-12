@@ -32,6 +32,15 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  delete(id: any): void {
+    this.service.delete(id).subscribe((resposta) => {
+      if (resposta === null) {
+        this.service.message('Task deleted success');
+        this.list = this.list.filter((todo) => todo.id !== id);
+      }
+    });
+  }
+
   finalizar(item: Todo): void {
     item.finalizado = true;
     this.service.update(item).subscribe(() => {
@@ -43,14 +52,5 @@ export class HomeComponent implements OnInit {
 
   navegarParaFinalizados(): void {
     this.router.navigate(['finalizados']);
-  }
-
-  delete(id: any): void {
-    this.service.delete(id).subscribe((resposta) => {
-      if (resposta === null) {
-        this.service.message('Task deleted success');
-        this.list = this.list.filter((todo) => todo.id !== id);
-      }
-    });
   }
 }
